@@ -54,3 +54,4 @@ INSERT INTO assignments (employeeId, enclosureId, day) VALUES (2, 5, 'Wednesday'
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (3, 3, 'Tuesday');
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (4, 1, 'Monday');
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (4, 1, 'Tuesday');
+
