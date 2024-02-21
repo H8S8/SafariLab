@@ -31,3 +31,21 @@ CREATE TABLE assignments (
     day VARCHAR(255)
 );
 
+INSERT INTO enclosures (name, capacity, closedForMaintenance) VALUES ('Water', 500, FALSE);
+INSERT INTO enclosures (name, capacity, closedForMaintenance) VALUES ('Desert', 50, FALSE);
+INSERT INTO enclosures (name, capacity, closedForMaintenance) VALUES ('Temperate Forest', 50, TRUE);
+INSERT INTO enclosures (name, capacity, closedForMaintenance) VALUES ('Rainforest', 10, FALSE);
+INSERT INTO enclosures (name, capacity, closedForMaintenance) VALUES ('Tundra', 30, FALSE);
+
+INSERT INTO employees (name, employeeNumber) VALUES ('Anna', 37635);
+INSERT INTO employees (name, employeeNumber) VALUES ('Zsolt', 37636);
+INSERT INTO employees (name, employeeNumber) VALUES ('Colin', 37637);
+INSERT INTO employees (name, employeeNumber) VALUES ('Richard', 37638);
+
+INSERT INTO animals (name, type, age, enclosureId) VALUES ('ASCII', 'Axolotl', 5, 1);
+INSERT INTO animals (name, type, age, enclosureId) VALUES ('Peggy', 'Pangolin', 19, 4);
+INSERT INTO animals (name, type, age, enclosureId) VALUES ('Otto', 'Otter', 12, 1);
+INSERT INTO animals (name, type, age, enclosureId) VALUES ('Chicken', 'Ptarmigan', 1, 5);
+
+INSERT INTO assignments (employeeId, enclosureId, day) VALUES (1, 2, 'Monday');
+
