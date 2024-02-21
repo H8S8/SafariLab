@@ -51,15 +51,18 @@ SELECT id FROM employees WHERE name = 'Zsolt'));
 6) The number of different keepers who have been assigned to work in a given enclosure
 
 ```sql
-
-
+SELECT COUNT(DISTINCT employeeId) FROM assignments 
+WHERE enclosureId = (
+	SELECT id FROM enclosures WHERE name = 'Temperate Forest');
 ```
 
 7) The names of the other animals sharing an enclosure with a given animal (eg. find the names of all the animals sharing the big cat field with Tony)
 
 ```sql
-
-
+SELECT name FROM animals 
+WHERE (enclosureId = (
+	SELECT enclosureId FROM animals WHERE name = 'Gabe'))
+	AND name != 'Gabe';
 ```
 
 

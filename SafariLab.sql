@@ -53,6 +53,7 @@ INSERT INTO animals (name, type, age, enclosureId) VALUES ('Gabe', 'Snowy Owl', 
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (1, 2, 'Monday');
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (2, 4, 'Monday');
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (2, 3, 'Tuesday');
+INSERT INTO assignments (employeeId, enclosureId, day) VALUES (2, 3, 'Thursday');
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (2, 5, 'Wednesday');
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (3, 3, 'Tuesday');
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (4, 1, 'Monday');
