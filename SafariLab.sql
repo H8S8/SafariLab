@@ -27,7 +27,7 @@ CREATE TABLE animals (
 CREATE TABLE assignments (
     id SERIAL PRIMARY KEY,
     employeeId INT REFERENCES employees(id),
-    enclodureId INT REFERENCES enclosures(id),
+    enclosureId INT REFERENCES enclosures(id),
     day VARCHAR(255)
 );
 
@@ -48,4 +48,9 @@ INSERT INTO animals (name, type, age, enclosureId) VALUES ('Otto', 'Otter', 12, 
 INSERT INTO animals (name, type, age, enclosureId) VALUES ('Chicken', 'Ptarmigan', 1, 5);
 
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (1, 2, 'Monday');
-
+INSERT INTO assignments (employeeId, enclosureId, day) VALUES (2, 4, 'Monday');
+INSERT INTO assignments (employeeId, enclosureId, day) VALUES (2, 3, 'Tuesday');
+INSERT INTO assignments (employeeId, enclosureId, day) VALUES (2, 5, 'Wednesday');
+INSERT INTO assignments (employeeId, enclosureId, day) VALUES (3, 3, 'Tuesday');
+INSERT INTO assignments (employeeId, enclosureId, day) VALUES (4, 1, 'Monday');
+INSERT INTO assignments (employeeId, enclosureId, day) VALUES (4, 1, 'Tuesday');
