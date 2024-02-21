@@ -32,7 +32,7 @@ CREATE TABLE assignments (
 );
 
 INSERT INTO enclosures (name, capacity, closedForMaintenance) VALUES ('Water', 500, FALSE);
-INSERT INTO enclosures (name, capacity, closedForMaintenance) VALUES ('Desert', 50, FALSE);
+INSERT INTO enclosures (name, capacity, closedForMaintenance) VALUES ('Desert', 50, TRUE);
 INSERT INTO enclosures (name, capacity, closedForMaintenance) VALUES ('Temperate Forest', 50, TRUE);
 INSERT INTO enclosures (name, capacity, closedForMaintenance) VALUES ('Rainforest', 10, FALSE);
 INSERT INTO enclosures (name, capacity, closedForMaintenance) VALUES ('Tundra', 30, FALSE);
@@ -44,8 +44,11 @@ INSERT INTO employees (name, employeeNumber) VALUES ('Richard', 37638);
 
 INSERT INTO animals (name, type, age, enclosureId) VALUES ('ASCII', 'Axolotl', 5, 1);
 INSERT INTO animals (name, type, age, enclosureId) VALUES ('Peggy', 'Pangolin', 19, 4);
+INSERT INTO animals (name, type, age, enclosureId) VALUES ('Ally', 'Axolotl', 5, 1);
+INSERT INTO animals (name, type, age, enclosureId) VALUES ('Python (the programming language not the snake)', 'Pangolin', 19, 4);
 INSERT INTO animals (name, type, age, enclosureId) VALUES ('Otto', 'Otter', 12, 1);
-INSERT INTO animals (name, type, age, enclosureId) VALUES ('Chicken', 'Ptarmigan', 1, 5);
+INSERT INTO animals (name, type, age, enclosureId) VALUES ('Hannah', 'Ptarmigan', 1, 5);
+INSERT INTO animals (name, type, age, enclosureId) VALUES ('Gabe', 'Snowy Owl', 2, 1);
 
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (1, 2, 'Monday');
 INSERT INTO assignments (employeeId, enclosureId, day) VALUES (2, 4, 'Monday');
