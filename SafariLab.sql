@@ -1,7 +1,7 @@
-DROP IF EXISTS assignments;
-DROP IF EXISTS animals;
-DROP IF EXISTS employees;
-DROP IF EXISTS enclosures;
+DROP TABLE IF EXISTS assignments;
+DROP TABLE IF EXISTS animals;
+DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS enclosures;
 
 CREATE TABLE enclosures (
     id SERIAL PRIMARY KEY,
@@ -30,3 +30,4 @@ CREATE TABLE assignments (
     enclodureId INT REFERENCES enclosures(id),
     day VARCHAR(255)
 );
+
